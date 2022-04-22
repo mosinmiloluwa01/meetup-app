@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+  padding: 1rem 4rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+.title {
+  font-size: 1.25rem;
+  margin: 0rem;
+  font-family: poppins-medium;
+}
+p {
+  margin-bottom: 0rem;
+}
+nav {
+  display: flex;
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    text-decoration: none !important;
+    a {
+      text-decoration: none !important;
+      color: inherit;
+      font-family: poppins-light;
+    }
+    a:hover {
+      font-weight: bold;
+    }
+    li {
+      margin-left: 1.5rem;
+      list-style-type: none;
+      text-decoration: none !important;
+    }
+  }
+}
