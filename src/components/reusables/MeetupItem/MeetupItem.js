@@ -31,11 +31,11 @@ const MeetupItem = (props) => {
         <h3>{meetupData.title}</h3>
         <address>{meetupData.address}</address>
         <p>{meetupData.description}</p>
-        <div className="button-container">
-          <button onClick={toggleFavorites}>
-            {itemIsFavorite ? "Remove From Favorites" : "To Favorites"}
-          </button>
-        </div>
+      </div>
+      <div className="button-container">
+        <button onClick={toggleFavorites}>
+          {itemIsFavorite ? "Remove From Favorites" : "To Favorites"}
+        </button>
       </div>
     </div>
   );

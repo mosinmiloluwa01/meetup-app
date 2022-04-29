@@ -1,10 +1,12 @@
 .tile {
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 30%;
+  height: 25rem;
+  // width: 30%;
   background-color: white;
   border-radius: 1rem;
-  margin-right: 1rem;
+  // margin-right: 1rem;
   box-shadow: 0.5rem 0.125rem 1rem 0.1rem rgb(236, 236, 236);
 }
 .image-container {
@@ -19,25 +21,33 @@
 }
 .text-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 100%;
   padding: 1rem 1rem 0.5rem;
   font-size: 0.8rem;
+  max-height: 10rem;
+  height: 10rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
   h3 {
     margin: 0.5rem 0rem;
   }
   p {
     text-align: justify;
+    word-break: break-all;
   }
-  .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem 0rem;
-    button {
-      color: var(--primary-color);
-      border: 1px solid var(--primary-color);
-      background-color: transparent;
-    }
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem 0rem;
+  button {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
   }
 }

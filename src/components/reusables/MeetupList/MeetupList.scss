@@ -1,5 +1,7 @@
 .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem;
   width: 100%;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
